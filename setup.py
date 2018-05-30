@@ -9,7 +9,7 @@ with open('LICENSE.txt') as f:
 setup(
   name='citi-wikibot',
   packages=['wikibot'],
-  version='0.4.1',
+  version='0.4.2',
   description='CITI\'s Wiki page editing for lazy people.',
   long_description=readme,
   long_description_content_type='text/markdown',
