@@ -4,7 +4,7 @@ clean:
 	rm -fr citi_wikibot.egg-info .egg htmlcov
 
 dependencies:
-	pip install coverage codecov pylint twine sphinx requests misaka -e .
+	pip install coverage codecov pylint twine sphinx requests misaka m2r -e .
 
 readme:
 	# install m2r: pip install m2r
