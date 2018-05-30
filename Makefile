@@ -1,6 +1,10 @@
 clean:
 	@find . -name "*.pyc" -exec rm -rf {} \;
 	@find . -name "__pycache__" -delete
+	rm -fr citi_wikibot.egg-info .egg
+
+dependencies:
+	pip install coverage codecov pylint twine sphinx requests misaka -e .
 
 readme:
 	# install m2r: pip install m2r

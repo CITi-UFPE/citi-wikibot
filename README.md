@@ -1,4 +1,6 @@
 # CITi's Wikibot
+[![codecov](https://codecov.io/gh/CITi-UFPE/citi-wikibot/branch/master/graph/badge.svg)](https://codecov.io/gh/CITi-UFPE/citi-wikibot)  
+
 Python script to easily edit pages on [CITi's Wiki](http://wiki.citi.org.br/) directly from shell or using a Markdown (.md) file. Currently, our Wiki is made using [MediaWiki](https://www.mediawiki.org/).
 
 ## Installation
