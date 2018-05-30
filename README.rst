@@ -2,7 +2,17 @@
 CITi's Wikibot
 ==============
 
-Easily edit pages on `CITi's Wiki <http://wiki.citi.org.br/>`_ directly from shell or using a Markdown (.md) file.
+
+.. image:: https://codecov.io/gh/CITi-UFPE/citi-wikibot/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/CITi-UFPE/citi-wikibot
+   :alt: codecov
+ 
+.. image:: https://circleci.com/gh/CITi-UFPE/citi-wikibot.svg?style=svg
+   :target: https://circleci.com/gh/CITi-UFPE/citi-wikibot
+   :alt: CircleCI
+
+
+Python script to easily edit pages on `CITi's Wiki <http://wiki.citi.org.br/>`_ directly from shell or using a Markdown (.md) file. Currently, our Wiki is made using `MediaWiki <https://www.mediawiki.org/>`_.
 
 Installation
 ------------
@@ -13,6 +23,8 @@ Installation
 
 Usage
 -----
+
+Note: Keep in mind that every command will overwrite the current page content with the one you provide.
 
 Editing a page directly from the shell
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

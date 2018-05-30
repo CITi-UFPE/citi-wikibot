@@ -6,7 +6,7 @@ with open('README.rst', 'r') as f:
 setup(
   name='citi-wikibot',
   packages=['wikibot'],
-  version='0.4.9',
+  version='0.4.10',
   description='CITI\'s Wiki page editing for lazy people.',
   long_description=readme,
   author='Vanessa Barreiros',
