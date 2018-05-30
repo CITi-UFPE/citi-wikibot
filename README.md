@@ -10,7 +10,7 @@ $ pip install citi-wikibot
 ### Editing a page directly from the shell
 ```shell
 $ python
->>> from wikibot.wiki import Wikibot
+>>> from wikibot.bot import Wikibot
 >>> bot = Wikibot(username='insert_username', password='insert_password', page='insert_page')
 >>> bot.edit_page('== My title ==\nHello world!')
 ```
@@ -20,7 +20,7 @@ $ python
 $ ls
 notes.md
 $ python
->>> from wikibot.wiki import Wikibot
+>>> from wikibot.bot import Wikibot
 >>> bot = Wikibot(username='insert_username', password='insert_password', page='insert_page')
 >>> bot.edit_page_from_file('notes.md')
 ```
