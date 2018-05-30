@@ -1,7 +1,8 @@
-from tapioca_github import Github
-from decouple import config
 import requests
+from decouple import config
+
 import misaka
+from tapioca_github import Github
 
 
 class GithubWikiWrapper(object):
