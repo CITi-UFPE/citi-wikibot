@@ -19,7 +19,7 @@ Note: Keep in mind that every command will overwrite the current page content wi
 
 ```shell
 $ python
->>> from wikibot.bot import Wikibot
+>>> from wikibot import Wikibot
 >>> bot = Wikibot('username', 'password', 'page_title')
 >>> bot.edit_page('== My title ==\nHello world!')
 ```
@@ -30,7 +30,7 @@ $ python
 $ ls
 notes.md
 $ python
->>> from wikibot.bot import Wikibot
+>>> from wikibot import Wikibot
 >>> bot = Wikibot('username', 'password', 'page_title')
 >>> bot.edit_page_from_file('notes.md')
 ```
@@ -38,7 +38,7 @@ $ python
 Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-ufpe/in-forma/wiki)), parses it and edits the page on CITi Wiki ([result](http://wiki.citi.org.br/index.php?title=In_Forma)).
 ```shell
 $ python
->>> from wikibot.bot import Wikibot
+>>> from wikibot import Wikibot
 >>> bot = Wikibot('username', 'password', 'page_title')
 >>> bot.edit_page_from_github('my_repository')
 GitHub's wiki homepage from my_repository successfully loaded and edited!
