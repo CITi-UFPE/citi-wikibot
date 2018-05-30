@@ -6,25 +6,14 @@ jobs:
     steps:
       - checkout
 
-      - restore_cache:
-          key: v1-dependency-cache-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
-
       - run:
           name: install python dependencies
           command: |
-            python3 -m venv venv
-            . venv/bin/activate
             make dependencies
-
-      - save_cache:
-          key: v1-dependency-cache-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
-          paths:
-            - "venv"
 
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             make test
             codecov
 

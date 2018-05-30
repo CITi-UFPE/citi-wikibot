@@ -19,3 +19,4 @@ publish:
 
 test:
 	coverage run -m unittest discover
+	coverage xml
