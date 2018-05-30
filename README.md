@@ -1,5 +1,5 @@
 # CITi's Wikibot
-Easily edit pages on [CITi's Wiki](http://wiki.citi.org.br/) directly from shell or using a Markdown (.md) file.
+Python script to easily edit pages on [CITi's Wiki](http://wiki.citi.org.br/) directly from shell or using a Markdown (.md) file. Currently, our Wiki is made using [MediaWiki](https://www.mediawiki.org/).
 
 ## Installation
 ```shell
