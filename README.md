@@ -20,8 +20,8 @@ $ python
 >>> bot.edit_page('== My title ==\nHello world!')
 ```
 ### Editing a page from a Markdown file
-> Important: It's recommended that you run the script in the folder your file is located  
-
+> Important: It's recommended that you run the script in the folder your file is located
+  
 ```shell
 $ ls
 notes.md
