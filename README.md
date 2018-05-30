@@ -31,7 +31,7 @@ $ python
 >>> bot.edit_page_from_file('notes.md')
 ```
 ### Gets the Homepage from GitHub wiki of your repository
-Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-ufpe/in-forma/wiki)), parses it and edits the page on CITi Wiki.
+Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-ufpe/in-forma/wiki)), parses it and edits the page on CITi Wiki ([result](http://wiki.citi.org.br/index.php?title=In_Forma)).
 ```shell
 $ python
 >>> from wikibot.bot import Wikibot
