@@ -1,7 +1,7 @@
 clean:
 	@find . -name "*.pyc" -exec rm -rf {} \;
 	@find . -name "__pycache__" -delete
-	rm -fr citi_wikibot.egg-info .egg
+	rm -fr citi_wikibot.egg-info .egg htmlcov
 
 dependencies:
 	pip install coverage codecov pylint twine sphinx requests misaka -e .
@@ -16,3 +16,6 @@ publish:
 	python setup.py sdist
 	twine upload dist/*
 	rm -fr build dist .egg citi_wikibot.egg-info
+
+test:
+	coverage run -m unittest discover
