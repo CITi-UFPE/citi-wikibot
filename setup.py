@@ -11,4 +11,5 @@ setup(
   download_url = 'https://github.com/CITi-UFPE/citi-wikibot/archive/0.1.tar.gz',
   keywords = ['wiki', 'bot', 'wikibot', 'citi'],
   classifiers = [],
+  license = 'MIT'
 )
