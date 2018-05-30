@@ -8,7 +8,7 @@ setup(
   author = 'Vanessa Barreiros',
   author_email = 'vanessa.barreiros@citi.org.br',
   url = 'https://github.com/citi-ufpe/citi-wikibot',
-  download_url = '',
+  download_url = 'https://github.com/CITi-UFPE/citi-wikibot/archive/0.1.tar.gz',
   keywords = ['wiki', 'bot', 'wikibot', 'citi'],
   classifiers = [],
 )
