@@ -49,6 +49,7 @@ class Wikibot(GithubWikiWrapper):
         return response
 
     def edit_page(self, content=None):
+        """ Overwrite existing page with the content you provide (supports Wikicode and basic HTML) """
         if not content != None:
             raise RuntimeError('You have not specified a content!')
         self.session.post(self.api_root, data={

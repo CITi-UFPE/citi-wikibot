@@ -1,5 +1,5 @@
 # CITi's Wikibot
-[![codecov](https://codecov.io/gh/CITi-UFPE/citi-wikibot/branch/master/graph/badge.svg)](https://codecov.io/gh/CITi-UFPE/citi-wikibot) [![CircleCI](https://circleci.com/gh/CITi-UFPE/citi-wikibot.svg?style=svg)](https://circleci.com/gh/CITi-UFPE/citi-wikibot)
+[![codecov](https://codecov.io/gh/CITi-UFPE/citi-wikibot/branch/master/graph/badge.svg)](https://codecov.io/gh/CITi-UFPE/citi-wikibot) [![CircleCI](https://circleci.com/gh/CITi-UFPE/citi-wikibot.svg?style=svg)](https://circleci.com/gh/CITi-UFPE/citi-wikibot) [![PyPI version](https://badge.fury.io/py/citi-wikibot.svg)](https://badge.fury.io/py/citi-wikibot)
 
 Python script to easily edit pages on [CITi's Wiki](http://wiki.citi.org.br/) directly from shell or using a Markdown (.md) file. Currently, our Wiki is made using [MediaWiki](https://www.mediawiki.org/).
 
