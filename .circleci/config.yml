@@ -36,7 +36,7 @@ jobs:
           path: coverage
           prefix: coverage
   store_test_results:
-      - 'coverage'
+      - path: coverage
   deploy:
     docker:
       - image: circleci/python:3.6
