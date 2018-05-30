@@ -51,6 +51,11 @@ jobs:
             . venv/bin/activate
             make dependencies
 
+      - save_cache:
+          key: v1-dependency-cache-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
+          paths:
+            - "venv"
+
       - run:
           name: init .pypirc
           command: |
@@ -61,6 +66,7 @@ jobs:
       - run:
           name: create packages and upload to pypi
           command: |
+            . venv/bin/activate
             make publish
 
 workflows:
