@@ -30,3 +30,13 @@ $ python
 >>> bot = Wikibot(username='insert_username', password='insert_password', page='insert_page')
 >>> bot.edit_page_from_file('notes.md')
 ```
+### Gets the Homepage from GitHub wiki of your repository
+Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-ufpe/in-forma/wiki)), parses it and edits the page on CITi Wiki.
+```shell
+$ python
+>>> from wikibot.bot import Wikibot
+>>> bot = Wikibot(username='insert_username', password='insert_password', page='insert_page')
+>>> bot.repo = 'my_repository'  # important!
+>>> bot.edit_page_from_repo()
+>>> GitHub's wiki homepage from my_repository successfully loaded!
+```
