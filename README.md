@@ -7,7 +7,10 @@ $ pip install citi-wikibot
 ```
 
 ## Usage
+Note: Keep in mind that every command will overwrite the current page content with the one you provide.
+
 ### Editing a page directly from the shell
+
 ```shell
 $ python
 >>> from wikibot.bot import Wikibot
