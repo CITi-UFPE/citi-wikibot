@@ -12,6 +12,8 @@ jobs:
       - run:
           name: install python dependencies
           command: |
+            python3 -m venv venv
+            . venv/bin/activate
             make dependencies
 
       - save_cache:
@@ -22,6 +24,7 @@ jobs:
       - run:
           name: run tests
           command: |
+            . venv/bin/activate
             make test
             codecov
 
