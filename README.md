@@ -36,7 +36,7 @@ Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-
 $ python
 >>> from wikibot.bot import Wikibot
 >>> bot = Wikibot(username='insert_username', password='insert_password', page='insert_page')
->>> bot.repo = 'my_repository'  # important!
->>> bot.edit_page_from_repo()
->>> GitHub's wiki homepage from my_repository successfully loaded!
+>>> bot.edit_page_from_github('my_repository')
+GitHub's wiki homepage from my_repository successfully loaded and edited!
+Check it here: http://wiki.citi.org.br/index.php?title=insert_page
 ```

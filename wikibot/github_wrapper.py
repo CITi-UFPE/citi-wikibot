@@ -10,7 +10,6 @@ class GithubWikiWrapper(object):
 
     def __init__(self, repo=None):
         self.client = self._init_github_client()
-        self.repo = repo
 
     def _init_github_client(self):
         return Github(access_token=self.token)
@@ -24,12 +23,12 @@ class GithubWikiWrapper(object):
             repo=response().data['name']))
         return response().data
 
-    def import_file_from_repo(self):
+    def import_file_from_repo(self, repo=None):
         """ Import homepage from Wiki from the repository you used on `load_repo_data()` """
-        if not self.repo:
+        if not repo:
             raise RuntimeError('You must provide a repository!')
         url = 'https://raw.githubusercontent.com/wiki/{organization}/{repo}/Home.md'.format(
-            organization=self.organization, repo=self.repo
+            organization=self.organization, repo=repo
         )
         headers = dict(
             Authorization='token {0}'.format(self.token),
