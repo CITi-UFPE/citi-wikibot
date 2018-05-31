@@ -11,6 +11,7 @@ readme:
 	# install m2r: pip install m2r
 	rm README.rst
 	m2r README.md
+	python setup.py check --restructuredtext
 
 publish:
 	make readme clean

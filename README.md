@@ -50,7 +50,8 @@ Check it here: http://wiki.citi.org.br/index.php?title=insert_page
 ```
 
 ## Reference
-#### `edit_page(content)`
+### `edit_page(content)`
+
 - `content` (string): The content you want to put in the page. Note that it will overwrite the current one! **It accepts Wikicode (Wikipedia and MediaWiki format).**
     
     Example:
@@ -61,7 +62,8 @@ Check it here: http://wiki.citi.org.br/index.php?title=insert_page
     bot.edit_page('*Hello* world!')
     ```
 
-#### `edit_page_from_file(file)`
+### `edit_page_from_file(file)`
+
 - `file` (string): The file name you want to load. It must be in Markdown format!
 
     Example:
@@ -72,7 +74,8 @@ Check it here: http://wiki.citi.org.br/index.php?title=insert_page
     bot.edit_page_from_file('notes.md')
     ```
 
-#### `edit_page_from_github(repo)`
+### `edit_page_from_github(repo)`
+
 - `repo` (string): The name of your repository. It needs to have a Wiki. The script will automatically search in **citi-ufpe's organization**.
     > Remember to declare your `GITHUB_TOKEN` environment variable! Instructions above in **Usage**.
 

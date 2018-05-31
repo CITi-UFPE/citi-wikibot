@@ -86,7 +86,7 @@ Reference
 ---------
 
 ``edit_page(content)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 * 
@@ -102,7 +102,7 @@ Reference
        bot.edit_page('*Hello* world!')
 
 ``edit_page_from_file(file)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 * 
@@ -118,7 +118,7 @@ Reference
        bot.edit_page_from_file('notes.md')
 
 ``edit_page_from_github(repo)``
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 * 
