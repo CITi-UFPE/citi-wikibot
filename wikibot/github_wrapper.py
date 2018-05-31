@@ -6,17 +6,18 @@ from tapioca_github import Github
 
 
 class GithubWikiWrapper(object):
-    token = config('GITHUB_TOKEN', None)
+    token = None
     organization = 'citi-ufpe'
 
     def __init__(self):
-        self.client = self._init_github_client()
         self.repo = ''
 
     def _init_github_client(self):
+        self.token = config('GITHUB_TOKEN', None)
         return Github(access_token=self.token)
 
     def _get_repo_data(self):
+        self.client = self._init_github_client()
         """ Import the homepage of a Wiki inside a repository """
         if not self.repo:
             raise RuntimeError('You must provide a repository!')
@@ -34,6 +35,7 @@ class GithubWikiWrapper(object):
         return data['has_wiki'] == True
 
     def import_file_from_repo(self, repo=None):
+        self.client = self._init_github_client()
         """ Import homepage from Wiki from the repository you used on `load_repo_data()` """
         if not repo:
             raise RuntimeError('You must provide a repository!')

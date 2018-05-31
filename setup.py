@@ -3,6 +3,9 @@ from setuptools import setup
 with open('README.rst', 'r') as f:
   readme = f.read()
 
+with open('requirements.txt', 'r') as file:
+    requires = [line.strip('\n') for line in file]
+
 setup(
   name='citi-wikibot',
   packages=['wikibot'],
@@ -13,8 +16,5 @@ setup(
   author_email='vanessa.barreiros@citi.org.br',
   url='https://github.com/citi-ufpe/citi-wikibot',
   keywords=['wiki', 'bot', 'wikibot', 'citi'],
-  install_requires=[
-    'requests',
-    'misaka'
-  ]
+  install_requires=requires
 )

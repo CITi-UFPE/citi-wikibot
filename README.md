@@ -36,7 +36,11 @@ $ python
 ```
 ### Gets the Homepage from GitHub wiki of your repository
 Automatically gets your GitHub wiki homepage ([example](https://github.com/citi-ufpe/in-forma/wiki)), parses it and edits the page on CITi Wiki ([result](http://wiki.citi.org.br/index.php?title=In_Forma)).
+
+#### You must declare your [personal access token from GitHub](https://github.com/settings/tokens) in a variable called `GITHUB_TOKEN` in order to use this command.
+
 ```shell
+$ GITHUB_TOKEN="mypersonalaccesstoken123"
 $ python
 >>> from wikibot import Wikibot
 >>> bot = Wikibot('username', 'password', 'page_title')
@@ -70,11 +74,12 @@ Check it here: http://wiki.citi.org.br/index.php?title=insert_page
 
 #### `edit_page_from_github(repo)`
 - `repo` (string): The name of your repository. It needs to have a Wiki. The script will automatically search in **citi-ufpe's organization**.
+    > Remember to declare your `GITHUB_TOKEN` environment variable! Instructions above in **Usage**.
 
     Example:
     ```python
     from wikibot import Wikibot
-    
+
     bot = Wikibot('myusername', '123', 'My_Page')
     bot.edit_page_from_github('my-repo')
     ```
