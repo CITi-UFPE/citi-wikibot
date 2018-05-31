@@ -10,6 +10,7 @@ class Wikibot(GithubWikiWrapper):
     session = requests.Session()
 
     def __init__(self, username=None, password=None, page=None):
+        super().__init__()
         self.username = username
         self.password = password
         self.page = page
@@ -52,6 +53,9 @@ class Wikibot(GithubWikiWrapper):
         """ Overwrite existing page with the content you provide (supports Wikicode and basic HTML) """
         if not content != None:
             raise RuntimeError('You have not specified a content!')
+        warning = input('This will overwrite the page with your content, do you want to continue? [y/N]: ')
+        if warning is not 'y':
+            return print('Operation canceled by the user.')
         self.session.post(self.api_root, data={
             'action': 'edit',
             'title': self.page,
@@ -68,13 +72,15 @@ class Wikibot(GithubWikiWrapper):
 
     def edit_page_from_file(self, file=None):
         """ Allows you to edit a page using a Markdown (.md) file """
-        if not file != None:
+        if file is None:
             raise RuntimeError('You have not specified a file!')
 
         file = open(file, 'r')
         if not file.name.endswith('.md'):
             raise RuntimeError('You have to pass a Markdown (.md) file!')
-
+        warning = input('This will overwrite the page with your content, do you want to continue? [y/N]: ')
+        if warning is not 'y':
+            return print('Operation canceled by the user.')
         content = misaka.html(file.read())
         return self.edit_page(content)
 
