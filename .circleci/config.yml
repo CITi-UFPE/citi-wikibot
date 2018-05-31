@@ -26,7 +26,7 @@ jobs:
           command: |
             . venv/bin/activate
             make test
-            bash <(curl -s https://codecov.io/bash)
+            codecov
 
       - store_artifacts:
           path: htmlcov/
