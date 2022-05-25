@@ -20,7 +20,7 @@ prompt-toolkit==1.0.15
 ptyprocess==0.5.2
 pycparser==2.18
 Pygments==2.2.0
-PyJWT==1.6.4
+PyJWT==2.4.0
 python-dateutil==2.7.3
 python-decouple==3.1
 requests==2.18.4
